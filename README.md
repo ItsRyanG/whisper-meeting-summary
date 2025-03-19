@@ -1,6 +1,6 @@
-# Meeting Whisper
+# Whisper Meeting Summary 
 
-Meeting Whisper is a personal project developed to explore [Intel ARC GPU support in PyTorch 2.6](https://intel.github.io/intel-extension-for-pytorch/xpu/latest/tutorials/introduction.html) while experimenting with meeting transcription and analysis using [Whisper](https://github.com/openai/whisper) and Large Language Models (LLMs) powered by [Hugging Face Transformers](https://huggingface.co/docs/transformers/index). Although it was optimized for Intel ARC, the tool is designed to work on other architectures as well—but your mileage may vary.
+This is a personal project developed to explore [Intel ARC GPU support in PyTorch 2.6](https://intel.github.io/intel-extension-for-pytorch/xpu/latest/tutorials/introduction.html) while experimenting with meeting transcription and analysis using [Whisper](https://github.com/openai/whisper) and Large Language Models (LLMs) powered by [Hugging Face Transformers](https://huggingface.co/docs/transformers/index). Although it was optimized for Intel ARC, the tool is designed to work on other architectures as well—but your mileage may vary.
 
 ## Installation
 
