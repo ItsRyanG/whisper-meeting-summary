@@ -19,13 +19,13 @@ For optimal compatibility with PyTorch's built-in XPU support, please do not ins
 
 ### Optional Arguments:
 - **`--whisper-model`**: Whisper model for local transcription.  
-  *Default:* `WHISPER_MODEL` or `"openai/whisper-large-v3-turbo"`.
+  Default: `WHISPER_MODEL` or `"openai/whisper-large-v3-turbo"`.
 - **`--llm-model`**: HuggingFace model for local analysis.  
-  *Default:* `LLM_MODEL` or `"mistralai/Mistral-7B-Instruct-v0.3"`.
+  Default: `LLM_MODEL` or `"mistralai/Mistral-7B-Instruct-v0.3"`.
 - **`--device`**: Inference device (`cpu`, `cuda`, `mps`, `xpu`).  
-  *Default:* `"auto"`.
+  Default: `"auto"`.
 - **`--output-file`**: Output file path for analysis.  
-  *Default:* `OUTPUT_FILE` or `"meeting_analysis.md"`.
+  Default: `OUTPUT_FILE` or `"meeting_analysis.md"`.
 - **`--supplementary-instructions`**: Additional instructions for LLM analysis.
 - **`--verbose`**: Enable verbose logging.
 
