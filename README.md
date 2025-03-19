@@ -1,17 +1,16 @@
-# Whisper Meeing Sumamry
+# Meeting Whisper
 
-This is a personal project developed to explore Intel ARC GPU support in PyTorch 2.6 while experimenting with meeting transcription and analysis using [Whisper](https://github.com/openai/whisper) and Large Language Models (LLMs) powered by [Hugging Face Transformers](https://huggingface.co/docs/transformers/index). Although it was optimized for Intel ARC, the tool is designed to work on other architectures as well—but your mileage may vary.
+Meeting Whisper is a personal project developed to explore [Intel ARC GPU support in PyTorch 2.6](https://intel.github.io/intel-extension-for-pytorch/xpu/latest/tutorials/introduction.html) while experimenting with meeting transcription and analysis using [Whisper](https://github.com/openai/whisper) and Large Language Models (LLMs) powered by [Hugging Face Transformers](https://huggingface.co/docs/transformers/index). Although it was optimized for Intel ARC, the tool is designed to work on other architectures as well—but your mileage may vary.
 
 ## Installation
 
-Install the required dependencies:
-
-### For Intel Arc GPU with PyTorch 2.6+ built-in XPU support (Windows or Linux)
+For Intel Arc GPU with PyTorch 2.6+ built-in XPU support (Windows or Linux)
 
 ```bash
-python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/test/xpu
+python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
 python -m pip install -r requirements.txt
 ```
+For optimal compatibility with PyTorch's built-in XPU support, please do not install intel-extension-for-pytorch unless you specifically require its extra functionality. Installing it may introduce version conflicts with the Intel runtime libraries required by PyTorch.
 
 ## Command-Line Options
 
@@ -35,7 +34,6 @@ python -m pip install -r requirements.txt
 - **`WHISPER_MODEL`**: Whisper model for API transcription.
 - **`LLM_MODEL`**: LLM model for API analysis.
 - **`HUGGINGFACE_TOKEN`**: API key for Hugging Face models.
-- **`OPENAI_API_KEY`**: API key for OpenAI models.
 
 ## License
 
