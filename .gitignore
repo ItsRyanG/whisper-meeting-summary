@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+.venv/
+venv/
+env/
+ENV/
+
+# Build artifacts and distribution packages
+build/
+dist/
+*.egg-info/
+
+# Test, coverage, and cache directories
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Environment variables and configuration files
+.env
+*.env
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Editor and IDE specific files
+.vscode/
+.idea/
+
+# Output files (e.g., generated meeting analysis)
+meeting_analysis.md
+
+# Audio files (if added accidentally)
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.aiff
+*.wma
